@@ -1,0 +1,20 @@
+.client img{
+width: 100px;
+height: 100px;
+border-radius:50% ;
+text-align: center;
+margin-top: 10px;
+}
+.client{
+    text-align: center;
+   
+}
+.client p{
+    padding: 8px 12px;
+    text-align: justify;
+}
+
+.client-container{
+    border-radius: 5px;
+    box-shadow: 10px 10px 35px lightgray;
+}
