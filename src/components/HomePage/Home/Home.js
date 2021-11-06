@@ -1,6 +1,6 @@
 import React from 'react';
 import ClinetFeedback from '../ClinetFeedback/ClinetFeedback';
-import Facilities from '../Facilities/Facilities';
+import Feature from '../Feature/Feature';
 import Slider from '../Slider/Slider';
 import AllPackages from '../TourePackages/AllPackages/AllPackages';
 import './Home.css';
@@ -12,7 +12,7 @@ const Home = () => {
              <Slider></Slider>
             <AllPackages></AllPackages>
             <ClinetFeedback></ClinetFeedback>
-            <Facilities></Facilities>
+            <Feature></Feature>
            
         </div>
     );

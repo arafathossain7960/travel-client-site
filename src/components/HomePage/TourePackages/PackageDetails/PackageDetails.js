@@ -3,8 +3,10 @@ import './PackageDetails.css';
 
 import { useForm } from "react-hook-form";
 import { useParams } from 'react-router';
+import useAuth from '../../../../hooks/useAuth';
 
 const PackageDetails = () => {
+const {user}=useAuth();
     const [packageDetails, setPackageDetails]=useState({});
     const {id}=useParams();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -23,26 +25,30 @@ const PackageDetails = () => {
         const price=packageDetails.tourPrice;
         const location=packageDetails.destination;
         const duration=packageDetails.tourOutline;
-    const orderData ={packageName, price, duration, ...data};
+        const email=user?.email;
+    const orderData ={packageName, price, duration,email, ...data};
         fetch(`http://localhost:5000/packageDetails/${id}`,{
             method:"POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(orderData)
         })
         .then(res =>res.json())
-        .then(data =>console.log(data))
+        .then(data =>{
+            alert('your order success fully added');
+           
+        })
            
                 
-            
         
    
     } 
    
     return (
-        <div className="container ">
+        <div className="container py-3 ">
             <div className="text-center my-3">
             <h3>Welcome to <span className="text-primary text-center ">{packageDetails.destination}</span> tour with <b className="text-info">Dream Holidays
                 </b> </h3>
+                <h5>Please confirm you booking</h5>
 
             </div>
           
@@ -62,7 +68,7 @@ const PackageDetails = () => {
       <input className="" type="text" placeholder="Enter your name" {...register("name", {require:true})} />
       <br />
      
-      <input type="email" placeholder="Enter your email" {...register("email", { required: true })} />
+      <input type="text" placeholder="Enter your phone" {...register("phone", { required: true })} />
       <br />
 
       <input type="date" placeholder="Chose your date" {...register("date", { required: true })} />

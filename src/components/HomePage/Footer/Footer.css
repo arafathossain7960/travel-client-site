@@ -1,5 +1,16 @@
 .footer{
-    background-color: black;
-    padding: 50px 0px ;
+    background-color: #221f1f;
+  
     color: white;
+    padding: 10px 50px;
+}
+.footer p{
+    margin-bottom: -3px;
+   
+}
+.footer p:hover{
+    text-decoration: underline;
+}
+.footer small{
+    color: #8282f7;
 }

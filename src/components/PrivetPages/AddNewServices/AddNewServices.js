@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { FormCheck } from 'react-bootstrap';
 
 const AddNewServices = () => {
+    const {reset}=useForm();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data =>{
         fetch('http://localhost:5000/addNew',{
@@ -15,16 +16,18 @@ const AddNewServices = () => {
         .then(data =>{
             if(data.insertedId){
                 alert('your package added success')
-                data.reset();
+                
             }
         
         })
+       
+       
     }
         
   
     return (
         <div className="container text-center my-5">
-            <h3 className="mb-3">Add your next destination</h3>
+            <h3 className="mb-3 text-info">Add your next destination</h3>
          <div className="addNewPackage">
      <form onSubmit={handleSubmit(onSubmit)}>
      

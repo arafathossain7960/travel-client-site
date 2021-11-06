@@ -8,10 +8,14 @@ import Header from './components/HomePage/Header/Header';
 import AllOrders from './components/PrivetPages/ManageAllOrders/AllOrders';
 import AddNewServices from './components/PrivetPages/AddNewServices/AddNewServices';
 import Footer from './components/HomePage/Footer/Footer';
+import AuthProvider from './context/AuthProvider';
+import PrivetRoute from './components/LoginPage/PrivetRoute/PrivetRoute';
+import Admin from './components/Admin/Admin';
+import MyOrders from './components/PrivetPages/MyOrders/MyOrders';
 
 function App() {
   return (
-    
+    <AuthProvider>
      <Router>
     <Header></Header>
       <Switch>
@@ -22,16 +26,23 @@ function App() {
       <Route  path="/home">
       <Home></Home>
       </Route>
-      <Route path="/singlePackage/:id">
+      <PrivetRoute  path="/myorder">
+      <MyOrders></MyOrders>
+      </PrivetRoute>
+      <PrivetRoute  path="/admin">
+      <Admin></Admin>
+      </PrivetRoute>
+
+      <PrivetRoute path="/singlePackage/:id">
     <PackageDetails></PackageDetails>
-      </Route>
-      <Route path="/order">
+      </PrivetRoute>
+      <PrivetRoute path="/order">
 
     <AllOrders></AllOrders>
-      </Route>
-      <Route path="/addNewService">
+      </PrivetRoute>
+      <PrivetRoute path="/addNewService">
         <AddNewServices></AddNewServices>
-        </Route>
+        </PrivetRoute>
 
       <Route exact path="/login">
       <Login></Login>
@@ -39,6 +50,7 @@ function App() {
      </Switch>
      <Footer></Footer>
      </Router>
+     </AuthProvider>
     
   );
 }

@@ -1,0 +1,11 @@
+.adminDashboard{
+    padding: 30px 0px;
+
+    color: blue;
+    background-color: lightgray;
+    text-align: center;
+}
+.adminDashboard ul li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
