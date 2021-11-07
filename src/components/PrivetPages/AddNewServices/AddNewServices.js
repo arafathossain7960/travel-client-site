@@ -7,7 +7,7 @@ const AddNewServices = () => {
     const {reset}=useForm();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data =>{
-        fetch('http://localhost:5000/addNew',{
+        fetch('https://morning-ravine-36607.herokuapp.com/addNew',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(data)

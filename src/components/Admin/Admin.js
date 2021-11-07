@@ -10,7 +10,7 @@ import './Admin.css';
 
 const Admin = () => {
     const [adminShow, setAdminShow]=useState('AddNewServices')
-    console.log(adminShow)
+   
     return (
         <div className=" row">
             <div className="col-10">

@@ -6,7 +6,7 @@ const ClinetFeedback = () => {
     const [feedback, setFeedback]=useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/feedback')
+        fetch('https://morning-ravine-36607.herokuapp.com/feedback')
         .then(res=>res.json())
         .then(data =>setFeedback(data))
 

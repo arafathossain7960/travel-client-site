@@ -9,7 +9,7 @@ const OrdersTable = ({order, setDeleteOrderLoading}) => {
    const proceed = window.confirm('Are you sure the order is delete?');
    if(proceed){
      
-    const url = `http://localhost:5000/deleteOrder/${id}`;
+    const url = `https://morning-ravine-36607.herokuapp.com/deleteOrder/${id}`;
     fetch(url,{
       method:"delete",
       headers:{'content-type':'application/json'}

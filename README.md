@@ -1,71 +1,84 @@
-# Getting Started with Create React App
+## Please visit our International travelling web site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live website link [click](https://batch4-first.web.app/).
 
-## Available Scripts
+# Website name 
+## Dream Holidays
 
-In the project directory, you can run:
+# About "Dream Holidays"
+<p> The Dream Holidays will proved best enjoyable travel experiances around the world, The Dream Holidays offering you to the most attraction tourist place in clouding The Great wall in china, Tajmohl in india the biggest modern city the Dobai city ect, You can visit with Dream Holidays to hightest Mountain, History places, beautiful Revers and Romantic Sea beach Around the world</p>
 
-### `yarn start`
+# About website features
+<p>
+Fast of all you can see the beautiful Slider in the header of the website.
+then you can see our travel packages also you can easily chose any package, after that we put down some our client feedbacks and also some features the footers. If you want to Book a package you must sign in our website, you also see your order in the 'my order' route.
+the can easily login out with out button. 
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# available Route
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p>Here are the maximum are privet</p>
+<h4>Public Route </h4>
+    1.Home
+    2.Login
 
-### `yarn test`
+<h4>Privet Route </h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    1. Orders
+    2. My orders
+    3. Admin
+    4. Add new service or packages
+    5. Order form
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### available functionalities
+# Login Log Out system
+# Privet and public Route
+# Confirm order
+# Delete orders
+# Add new package by Admin
+# The user can see only his/her orders
+# The user can delete his/her orders
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## using resources for building site
+1. HTML 
+2. CSS
+3. React-Bootstrap
+4. React-FontAwasome
+5. JavaScript
+6. React js
+7. Firebase
+8. Node js
+9. MongoDB
+10. Heroku
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Author
+<h3>MD ARAFAT HOSSAIN</h3>
 
-### `yarn eject`
+# Happy Journey with Dream Holidays  [visit](https://batch4-first.web.app/).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# tourism-or-delivery-website-client-side-arafathossain7960
+
+
+
+
+
+
+

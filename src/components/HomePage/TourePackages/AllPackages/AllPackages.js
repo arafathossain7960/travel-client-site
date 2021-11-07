@@ -6,7 +6,7 @@ const AllPackages = () => {
 //  const [isLoading, setIsLoading]=useState(null);
 
  useEffect(()=>{
-    fetch('http://localhost:5000/homepackage')
+    fetch('https://morning-ravine-36607.herokuapp.com/homepackage')
     .then(res=>res.json())
     .then(data => setPackages(data))
 

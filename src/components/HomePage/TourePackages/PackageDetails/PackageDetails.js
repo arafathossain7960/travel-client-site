@@ -11,7 +11,7 @@ const {user}=useAuth();
     const {id}=useParams();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     useEffect(()=>{
-        const url =`http://localhost:5000/packageDetails/${id}`;
+        const url =`https://morning-ravine-36607.herokuapp.com/packageDetails/${id}`;
         fetch(url)
         .then(res=>res.json())
         .then(data =>setPackageDetails(data))
@@ -27,7 +27,7 @@ const {user}=useAuth();
         const duration=packageDetails.tourOutline;
         const email=user?.email;
     const orderData ={packageName, price, duration,email, ...data};
-        fetch(`http://localhost:5000/packageDetails/${id}`,{
+        fetch(`https://morning-ravine-36607.herokuapp.com/packageDetails/${id}`,{
             method:"POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(orderData)
